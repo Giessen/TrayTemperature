@@ -30,13 +30,13 @@ To customize the temperature ranges and their different colors, edit the followi
 
 ```xml
 <setting name="CPUMed" serializeAs="String">
-	<value>#ffff00</value>
+	<value>#ff0000</value>
 </setting>
 <setting name="CPULow" serializeAs="String">
-	<value>#ffffff</value>
+	<value>#000000</value>
 </setting>
 <setting name="CPUHigh" serializeAs="String">
-	<value>#ff0000</value>
+	<value>#ff00ff</value>
 </setting>
 <setting name="CPUTempMed" serializeAs="String">
 	<value>65</value>
@@ -45,13 +45,13 @@ To customize the temperature ranges and their different colors, edit the followi
 	<value>80</value>
 </setting>
 <setting name="GPULow" serializeAs="String">
-	<value>#ffffff</value>
+	<value>#000000</value>
 </setting>
 <setting name="GPUMed" serializeAs="String">
-	<value>#ffff00</value>
+	<value>#ff0000</value>
 </setting>
 <setting name="GPUHigh" serializeAs="String">
-	<value>#ff0000</value>
+	<value>#ff00ff</value>
 </setting>
 <setting name="GPUTempMed" serializeAs="String">
 	<value>60</value>
@@ -61,17 +61,10 @@ To customize the temperature ranges and their different colors, edit the followi
 </setting>
 ```
 
-# Download
-
-Check the **Releases** page: 
-
-https://github.com/Fergo/TrayTemperature/releases
-
 # Source code requirements 
 
-This software makes use of OpenHardwareMonitorLib.
+This software makes use of LibreHardwareMonitorLib.
 
-https://github.com/openhardwaremonitor/openhardwaremonitor
+https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
 
-The pre-compiled dll is already available with the release of TrayTemperature.
 

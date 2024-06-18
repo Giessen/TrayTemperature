@@ -6,7 +6,7 @@ using System.IO;
 using System.Text;
 using System.Reflection;
 
-using OpenHardwareMonitor.Hardware;
+using LibreHardwareMonitor.Hardware;
 
 namespace TrayTemperature {
 	static class Program {
@@ -14,7 +14,7 @@ namespace TrayTemperature {
 		static ulong CPUAcc = 0, GPUAcc = 0, regCount = 0;
 		static bool isLogging = false;
 
-		static Computer computer = new Computer() { CPUEnabled = true, GPUEnabled = true };
+		static Computer computer = new Computer() { IsCpuEnabled = true, IsGpuEnabled = true };
 		static Timer tmr;
 		static NotifyIcon ni;
 		static ContextMenu contextMenu;
@@ -233,7 +233,7 @@ namespace TrayTemperature {
 				ISensor sensor = hardware.Sensors.FirstOrDefault(d => d.SensorType == SensorType.Temperature);
 
 				if (sensor != null) {
-					if (hardware.HardwareType == HardwareType.CPU)
+					if (hardware.HardwareType == HardwareType.Cpu)
 						CPU = Convert.ToInt32(sensor.Value);
 					else
 						GPU = Convert.ToInt32(sensor.Value);
